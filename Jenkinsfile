@@ -6,10 +6,12 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
   Move the file to an S3 bucket and email me what you did.
 */
 node('nodejs') {
-  stages {
-    stage('check ruby version') {
-      steps {
-        sh 'ruby -v'
+  pipeline {
+    stages {
+      stage('check ruby version') {
+        steps {
+          sh 'ruby -v'
+        }
       }
     }
   }
