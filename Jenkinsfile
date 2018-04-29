@@ -6,9 +6,7 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
   Move the file to an S3 bucket and email me what you did.
 */
 pipeline {
-  agent {
-    docker { image 'ruby:latest'}
-  }
+  node('ruby') {
     stages {
       stage('check ruby version') {
         steps {
@@ -16,4 +14,5 @@ pipeline {
         }
       }
     }
+  }
 }
