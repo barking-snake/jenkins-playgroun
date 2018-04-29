@@ -5,13 +5,11 @@ and move them to ~/storage/Downloads.
 If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
   Move the file to an S3 bucket and email me what you did.
 */
-pipeline {
-  node('ruby') {
-    stages {
-      stage('check ruby version') {
-        steps {
-          sh 'ruby -v'
-        }
+node('ruby') {
+  stages {
+    stage('check ruby version') {
+      steps {
+        sh 'ruby -v'
       }
     }
   }
