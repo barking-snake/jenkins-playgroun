@@ -6,11 +6,14 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
   Move the file to an S3 bucket and email me what you did.
 */
 pipeline {
-  agent nodejs
-
+  agent {
+    node {
+      label 'ruby'
+    }
+  }
   stages {
     stage('WHAT') {
-      sh 'echo hello'
+      sh 'ruby -v'
     }
   }
 }
