@@ -7,7 +7,7 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
 */
 pipeline {
   agent {
-    docker { image 'ruby:2.4'}
+    docker { image 'ruby:latest'}
   }
     stages {
       stage('check ruby version') {
