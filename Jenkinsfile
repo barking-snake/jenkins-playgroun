@@ -8,7 +8,7 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
 node('nodejs') {
   stage('check ruby version') {
     steps {
-      sh 'ruby -v'
+      sh 'echo tacos'
     }
   }
 }
