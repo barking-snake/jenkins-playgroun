@@ -10,7 +10,7 @@ pipeline {
     stages {
       stage('Find Files') {
         steps {
-          sh 'find /home/adam/storage/* -type f -size +250000000'
+          sh 'echo $USER'
         }
       }
     }
