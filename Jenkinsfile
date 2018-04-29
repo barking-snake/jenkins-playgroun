@@ -13,7 +13,9 @@ pipeline {
   }
   stages {
     stage('WHAT') {
-      sh 'ruby -v'
+      steps {
+        sh 'ruby -v'
+      }
     }
   }
 }
