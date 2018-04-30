@@ -12,9 +12,11 @@ pipeline {
     }
   }
   stages {
-    stage('WHAT') {
+    stage('Install: Tools') {
       steps {
-        sh 'ruby -v'
+        sh 'gem install selenium-webdriver'
+        sh 'gem install chromedriver-helper'
+        sh 'gem install geckodriver-helper'
       }
     }
   }
