@@ -14,9 +14,9 @@ pipeline {
   stages {
     stage('Install: Tools') {
       steps {
-        sh 'sudo gem install selenium-webdriver'
-        sh 'sudo gem install chromedriver-helper'
-        sh 'sudo gem install geckodriver-helper'
+        sh 'gem install selenium-webdriver'
+        sh 'gem install chromedriver-helper'
+        sh 'gem install geckodriver-helper'
       }
     }
   }
