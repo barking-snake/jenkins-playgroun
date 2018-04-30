@@ -8,7 +8,7 @@ If any file in ~/storage/Downloads hasn't been touched in 6 weeks...
 pipeline {
   agent {
     node {
-      label 'ruby'
+      label 'jenkins-slave-ruby-centos7'
     }
   }
   stages {
